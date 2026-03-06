@@ -5,6 +5,9 @@ File  : dashboard_pro.py
 RUN   : python -m streamlit run dashboard_pro.py
 =============================================================================
 """
+import subprocess
+subprocess.run(["pip", "install", "plotly", "pandas", "numpy"], 
+               capture_output=True)
 import warnings
 warnings.filterwarnings("ignore")
 
